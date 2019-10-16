@@ -1,4 +1,7 @@
 (function(){ 
+
+    // Intro to javascript
+
     var hello = ' Hello world, my name is Andrew';
 
     // console.log(hello);
@@ -13,6 +16,11 @@
 
     // console.log(sum);
 
+
+
+
+    // Objects 
+
     var person = {
         name: "Jenny", // name is a property
         role: 'BaseUser',
@@ -20,11 +28,20 @@
         favoriteColor: "blue",
     }
 
+
+
+
+    // If Else logic (if true, do something, else something else)
     if (person.role == 'BaseUser') {
-        console.log(person.name + ' is a base user.');
+        // console.log(person.name + ' is a base user.');
     } else if (person.role == 'Admin') {
-        console.log(person.name + ' is a super user!');
+        // console.log(person.name + ' is a super user!');
     }
+
+
+
+
+    // Object with arrays as properties
 
     var dog = {
         name: 'Lucy',
@@ -47,46 +64,18 @@
             'green'
         ]
     };
+    // console.log(dog.medicalRecords.length);
 
-    var whatColor = 'color';
-
-    console.log(dog.medicalRecords.length);
-
+    // For Loop to list out dog object medical record array values
     for(var i = 0; i < dog.medicalRecords.length; i++) {
-        console.log(dog.medicalRecords[i]);
-    }
-
-    // dog.medicalRecords[0]
-    // dog.medicalRecords[1]
-    // dog.medicalRecords[3]
-
-    // console.log(dog.medicalRecords[0]);
-
-    var newsFeed = document.getElementsByClassName('news-feed');
-
-    function addClass(className) {
-        var newClasses = newsFeed + ' ' + className
-        return newClasses;
-    }
-    console.log(addClass('loading'));
-
-    // console.log(newsFeed);
-
-    var emptyArray = [];
-    console.log(emptyArray);
-
-    function myFunction() {
-
-    }
-
-    var myFunction = function() {
-
+        // console.log(dog.medicalRecords[i]);
     }
 
 
 
+    
 
-
+   // JQUERY INTRO
     var myArray = [
         "this",
         "that",
@@ -98,16 +87,19 @@
     for(var i = 0; i < myArray.length; i++) {
         var listItemContent = myArray[i];
         var li = "<li>" + listItemContent + "</li>";
-        console.log(li);
+        // console.log(li);
         $('.left-nav').append(li);
     }
 
-    $('.btn-white').on('click', function () {
-        $('.btn-white').html('I was clicked!');
+    var btn = $('.btn-white');
+
+    btn.on('click', function () {
+        btn.addClass('btn-black');
     })
 
 
 
+    // Javascript Maths
 
     function multiply(a, b, c) {
         return a * b * c;
@@ -115,29 +107,6 @@
 
     var answer = multiply(2, 4, 9);
 
-    console.log(answer);
-
-
-
-
-
-
-    // this will throw a scope error!
-    var twoForOneCoupon = true;
-    var veggieToppings = ["mushrooms", "spinach", "eggplant"];
-
-    function twoToppingPizza(toppings) {
-        var price = 10;
-
-        console.log("You'll get a pizza with " + toppings[0] + " and " + toppings[1]);
-
-        if (twoForOneCoupon === true) {
-            console.log("Nice, you get a second pizza free with this coupon!");
-        }
-
-        console.log('Your total is ' + price + 'dollars');
-    }
-
-    twoToppingPizza(veggieToppings);
+    // console.log(answer);
 
 }()); 
