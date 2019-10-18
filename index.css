@@ -34,9 +34,17 @@ body {
 	margin: 0 15%;
 }
 
+.bannerImage {
+	background-image: url('https://s3.amazonaws.com/lrdg-inc.com/images/1-magic-village.png');
+	width: 700px;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .banner-image {
 	display: inline-block;
-	width: 700px;
+	width: 600px;
 }
 
 .banner-content {
@@ -95,7 +103,7 @@ p {
 }
 
 .footer-shoes img {
-	width: 350px;
+	width: 80px;
 }
 
 .footer-shoes {
@@ -110,3 +118,13 @@ p {
 .price-spacing {
 	margin-left: 140px;
 }
+
+@media (min-width: 1080px) {
+	.footer-shoes img {
+		width: 350px;
+	}
+
+	.banner-image {
+		width: 500px;
+	}
+} 
