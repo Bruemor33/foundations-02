@@ -34,14 +34,6 @@ body {
 	margin: 0 15%;
 }
 
-.bannerImage {
-	background-image: url('https://s3.amazonaws.com/lrdg-inc.com/images/1-magic-village.png');
-	width: 700px;
-	height: 500px;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 .banner-image {
 	display: inline-block;
 	width: 600px;
